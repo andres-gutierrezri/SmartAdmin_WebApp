@@ -1,0 +1,257 @@
+# SmartAdmin 4.5.0 - Git Ignore Configuration
+# Developed by: Ingeniero Andrés Felipe Gutiérrez Rivera
+# Institution: SENA - Técnico en Programación de Software
+# Date: 2025
+
+# ==========================================
+# Node.js Dependencies and Build Artifacts
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ==========================================
+# Build Output Directories
+# ==========================================
+dist/
+build/
+.tmp/
+.cache/
+*.tgz
+*.tar.gz
+
+# ==========================================
+# Environment Configuration Files
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+config/local.js
+config/production.js
+
+# ==========================================
+# IDE and Editor Configuration
+# ==========================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom Editor
+.atom/
+
+# JetBrains IDEs (WebStorm, IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ==========================================
+# Operating System Generated Files
+# ==========================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# Testing and Coverage Reports
+# ==========================================
+coverage/
+.nyc_output/
+*.lcov
+*.clover
+.coverage/
+.pytest_cache/
+junit.xml
+test-results/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+allure-results/
+
+# ==========================================
+# Logs and Runtime Data
+# ==========================================
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+.grunt/
+.lock-wscript
+typings/
+
+# ==========================================
+# SCSS/Sass Cache and Compiled CSS
+# ==========================================
+.sass-cache/
+*.css.map
+*.scss.map
+*.sass.map
+
+# ==========================================
+# Documentation Generation
+# ==========================================
+docs/build/
+docs/dist/
+typedoc/
+jsdoc/
+
+# ==========================================
+# Package Manager Lock Files (Optional)
+# Uncomment if using specific package manager
+# ==========================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==========================================
+# Deployment and CI/CD
+# ==========================================
+.serverless/
+.aws/
+.azure/
+.gcp/
+.docker/
+docker-compose.override.yml
+kubernetes/secrets/
+helm/secrets/
+
+# ==========================================
+# Database and Cache Files
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+.mongodb/
+redis-dump.rdb
+
+# ==========================================
+# Temporary and Backup Files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# ==========================================
+# Security and Sensitive Information
+# ==========================================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+secrets/
+private/
+certificates/
+
+# ==========================================
+# Project Specific Exclusions
+# SmartAdmin 4.5.0 Custom Ignores
+# ==========================================
+
+# FontAwesome Pro License Files (Keep private)
+src/assets/fonts/fontawesome-pro/
+!src/assets/fonts/fontawesome-pro/.gitkeep
+
+# Custom Theme Development
+src/scss/themes/custom-development/
+!src/scss/themes/custom-development/.gitkeep
+
+# Generated Documentation
+docs/api/generated/
+docs/components/auto-generated/
+
+# Local Development Assets
+src/assets/img/local/
+src/assets/data/sample/
+src/assets/mockups/
+
+# Gulp Generated Files
+.gulp-cache/
+.gulprc
+
+# ESLint and Prettier Cache
+.eslintcache
+.prettierignore.local
+
+# Local Configuration Overrides
+gulpfile.local.js
+webpack.config.local.js
+app.config.local.js
+
+# Performance Monitoring
+performance-reports/
+lighthouse-reports/
+bundlesize-reports/
+
+# ==========================================
+# Third-Party Integration Files
+# ==========================================
+google-services.json
+firebase-config.js
+aws-config.json
+azure-config.json
+
+# ==========================================
+# Education and Training Materials
+# SENA Institution Specific
+# ==========================================
+training-materials/private/
+student-submissions/
+assessment-results/
+institutional-configs/
+
+# ==========================================
+# Version Control Helpers
+# ==========================================
+# Keep essential folders structure
+!.gitkeep
+!README.md
+!.editorconfig
